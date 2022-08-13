@@ -60,7 +60,7 @@ Following tools and services are used to build this project
 * [AWS CloudFormation](https://aws.amazon.com/cloudformation/)
 * [AWS SNS](https://aws.amazon.com/sns)
 * [Github](https://github.com)
-* [Postmaster.com](https://www.postman.com)
+* [Postman.com](https://www.postman.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -79,7 +79,21 @@ Please follow the below steps to deploy the api project on AWS
 
 1. Login to [aws console](https://aws.amazon.com/console/)
 2. Go to CloudFormation
-3. 
+3. Click --> create stack -->upload a template file --> upload the yaml file at [cloudformation stack](https://github.com/rajgaurav603/deloitte-api-replace-word/blob/main/api-lambda-word-replace-cfstack.yaml)
+4. Enter stack name --> modify parameters if required -->next --> next --> create stack
+5. The cloudformation stack will be created
+6. Go to output section --> copy apiGatewayInvokeURL value
+7. Go to [Postman.com](https://www.postman.com) --> login
+8. click on new request  --> select POST method 
+9. In 'Enter request url', enter the api link copied from output of cloudformation stack
+10. click on 'body'--> click on 'raw'
+11. Enter the below string to check api: 
+   ```
+   {"input_string" : "I like the work culture of Deloitte. Google, Microsoft, Oracle and Amazon are also good organizations."}
+   ```
+13. Click on Send
+14. The api response will appear in the response box below with replaced words.
+15. 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
