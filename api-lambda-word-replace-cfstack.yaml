@@ -150,3 +150,5 @@ Outputs:
   apiGatewayInvokeURL:
     Value: !Sub https://${apiGateway}.execute-api.${AWS::Region}.amazonaws.com/${apiGatewayStage}/${PathPartValue}
 
+  lambdaArn:
+    Value: !GetAtt lambdaFunction.Arn
