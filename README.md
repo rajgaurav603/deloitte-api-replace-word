@@ -10,14 +10,20 @@
     <li><a href="Deliverables">Deliverables</a></li>
     <li><a href="Tools Used">Tools Used</a></li>
     <li>
-      <a href="Getting Started">Getting Started</a>
+      <a href="Deployment">Deployment</a>
       <ul>
         <li><a href="Prerequisites">Prerequisites</a></li>
         <li><a href="How to deploy">How to deploy</a></li>
         <li><a href="Testing the api">Testing the api</a></li>
       </ul>
     </li>
-    <li><a href="Automating release and updates">Automating release and updates</a></li>
+    <li>
+      <a href="Automating release and updates">Automating release and updates</a>
+      <ul>
+        <li><a href="Create a AWS codepipeline">Create a AWS codepipeline</a></li>
+        <li><a href="Adding notification rule">Adding notification rule</a></li>
+      </ul>
+    </li>
     <li><a href="Contact">Contact</a></li>
   </ol>
 </details>
@@ -60,8 +66,8 @@ Following tools and services are used to build this project
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-<!-- GETTING STARTED -->
-## Getting Started
+<!-- Deployment -->
+## Deployment
 Please follow the below steps to deploy the project
 
 ### Prerequisites
@@ -96,8 +102,9 @@ Please follow the below steps to deploy the api project on AWS
 
 <!-- Automating deployment -->
 ## Automating release and updates
+Create AWS codepipeline for continuous delivery and to automate release.
 
-Steps to create a AWS codepipeline to automate the release new changes
+### Create a AWS codepipeline 
 1. Click on create pipeline
 2. Enter pipeline name
 3. Add an service IAM role with sufficient permissions to deploy the stack --> click next
@@ -120,6 +127,15 @@ Now the pipeline will be triggered every time the yaml file is updated in github
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+### Adding notification rule
+1. Click on Create notification rule
+2. Enter notification name
+3. choose "basic" details
+4. Under "Events that trigger notifications" select pipeline execution :succeeded and failed
+5. Under targets select SNS topics --> SNS topic name 
+6. Click on Submit
+
+Add email id to subscribe to SNS topic and confirm the subscription to receive emails on pipeline execution.
 
 <!-- CONTACT -->
 ## Contact
