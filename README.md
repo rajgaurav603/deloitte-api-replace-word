@@ -6,27 +6,22 @@
 <details>
   <summary>Table of Contents</summary>
   <ol>
+    <li><a href="About The Project">About The Project</a></li>
+    <li><a href="Deliverables">Deliverables</a></li>
+    <li><a href="Tools Used">Tools Used</a></li>
     <li>
-      <a href="#about-the-project">About The Project</a>
+      <a href="Getting Started">Getting Started</a>
       <ul>
-        <li><a href="#built-with">Built With</a></li>
+        <li><a href="Prerequisites">Prerequisites</a></li>
+        <li><a href="How to deploy">How to deploy</a></li>
+        <li><a href="Testing the api">Testing the api</a></li>
       </ul>
     </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
+    <li><a href="Automating release and updates">Automating release and updates</a></li>
+    <li><a href="Contact">Contact</a></li>
   </ol>
 </details>
+
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
@@ -45,12 +40,12 @@ For example: replace Google for Google©.
 
 ## Deliverables
 
-1. version control system containing the source : 
-2. URL on which the API is accessible : 
+1. version control system containing the source : [Github Link](https://github.com/rajgaurav603/deloitte-api-replace-word)
+2. URL on which the API is accessible : https://fzhq3vslv0.execute-api.ap-south-1.amazonaws.com/live/api
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### Tools Used
+## Tools Used
 
 Following tools and services are used to build this project
 
@@ -70,7 +65,7 @@ Following tools and services are used to build this project
 Please follow the below steps to deploy the project
 
 ### Prerequisites
-* Create an AWS account
+* Create an AWS account [AWS Acccount Sign up](https://portal.aws.amazon.com/billing/signup?nc2=h_ct&src=header_signup&refid=09863622-0e2a-4080-9bba-12d378e294ba&redirect_url=https%3A%2F%2Faws.amazon.com%2Fregistration-confirmation#/start/email)
 * Create an account on [Postmaster.com](https://www.postman.com)
 
 ### How to deploy
@@ -80,7 +75,7 @@ Please follow the below steps to deploy the api project on AWS
 1. Login to [aws console](https://aws.amazon.com/console/)
 2. Go to CloudFormation
 3. Click --> create stack -->upload a template file --> upload the yaml file at [cloudformation stack](https://github.com/rajgaurav603/deloitte-api-replace-word/blob/main/api-lambda-word-replace-cfstack.yaml)
-4. Enter stack name --> modify parameters if required -->next --> next --> create stack
+4. Enter stack name --> modify parameters if required --> next --> next --> create stack
 5. The cloudformation stack will be created
 6. Go to output section --> apiGatewayInvokeURL value is the api key link
 
@@ -100,7 +95,7 @@ Please follow the below steps to deploy the api project on AWS
 
 
 <!-- Automating deployment -->
-## automating release and updates
+## Automating release and updates
 
 Steps to create a AWS codepipeline to automate the release new changes
 1. Click on create pipeline
