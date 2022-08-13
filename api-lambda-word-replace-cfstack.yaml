@@ -1,5 +1,5 @@
 AWSTemplateFormatVersion: 2010-09-09
-Description: Word Check API Gateway and Lambda function
+Description: Word Check API Gateway and Lambda 
 
 Parameters:
   apiGatewayName:
