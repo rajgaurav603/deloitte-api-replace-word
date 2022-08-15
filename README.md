@@ -72,7 +72,7 @@ Please follow the below steps to deploy the project
 
 ### Prerequisites
 * Create an AWS account [AWS Acccount Sign up](https://portal.aws.amazon.com/billing/signup?nc2=h_ct&src=header_signup&refid=09863622-0e2a-4080-9bba-12d378e294ba&redirect_url=https%3A%2F%2Faws.amazon.com%2Fregistration-confirmation#/start/email)
-* Create an account on [Postmaster.com](https://www.postman.com)
+* Create an account on [Postman.com](https://www.postman.com)
 
 ### How to deploy
 
